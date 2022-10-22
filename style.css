@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --very-dark-blue: hsl(216, 12%, 8%);
+    --dark-blue: hsl(213, 30%, 13%);
+    --white: hsl(0, 0%, 100%);
+    --medium-grey: hsl(216, 12%, 54%);
+    --light-grey: hsl(217, 12%, 63%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--very-dark-blue);
+    color: var(--white);
+}
+
+p {
+    font-size: 15px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--dark-blue);
+    max-width: 400px;
+    margin-inline: auto;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.star {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.star img {
+    background-color: var(--very-dark-blue);
+    border-radius: 50%;
+    padding: 15px;
+   
+}
+
+.text h2 {
+    padding-bottom: 15px;
+    
+}
+
+.text p {
+    color: var(--medium-grey);
+    padding-bottom: 20px;
+    
+}
+
+.buttons {
+    
+    display: flex;
+    gap: 25px;
+}
+.btns {
+    background-color: var(--very-dark-blue);
+    color: var(--medium-grey);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.btns:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+#submit-btn {
+    text-transform: uppercase;
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--orange);
+    border: none;
+    color: #fff;
+    width: 100%;
+    padding-block: 10px;
+    border-radius: 4rem;
+    margin-top: 25px;
+}
+
+#submit-btn:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+.success-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.illustration   {
+    margin-top: 20px;
+}
+
+.feedback {
+    background-color: var(--very-dark-blue);
+    padding: 10px 20px;
+    color: var(--orange);
+    border-radius: 30px;
+    margin-top: 15px;
+    width: 200px;
+    font-size: 15px;
+    margin-inline: auto;
+}
+
+.success-page .text h2 {
+    padding-top: 30px;
+}
+
+.success-page {
+    display: none;
+}
+
+.hide-page {
+    display: none;
+}
+
+.show-page {
+    display: block;
+}
+
