@@ -90,6 +90,7 @@ p {
 }
 
 #submit-btn {
+    cursor: pointer;
     text-transform: uppercase;
     font-family: 'Overpass', sans-serif;
     background-color: var(--orange);
@@ -144,3 +145,13 @@ p {
     display: block;
 }
 
+.btn-active {
+    background-color: var(--medium-grey);
+    color: #fff;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        max-width: 350px; 
+    }
+}
